@@ -1,94 +1,118 @@
-# Frontend Mentor - Article preview component
+# Frontend Mentor - Article preview component solution
 
-![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
+## Overview
+I built an interactive article preview card that displays article content with an author's avatar and a share button. When you click the share button, social media icons (Facebook, Pinterest, Twitter) appear in a nicely styled overlay. On smaller screens, the avatar section hides, and the entire bottom area becomes the share block.
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this article preview component and get it looking as close to the design as possible.
+Injected images via ```innerHTML``` were not loading correctly due to incorrect paths and syntax — needed to fix by providing valid paths and using correct HTML structure.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Keeping the share button fixed in place while toggling the social icons.
 
-The only JavaScript you'll need for this challenge is to initiate the share options when someone clicks the share icon.
+Handling different behavior on smaller screens (hiding the avatar and adjusting the background).
 
-Your users should be able to: 
+Making sure JavaScript doesn’t break when elements are missing or hidden.
 
-- View the optimal layout for the component depending on their device's screen size
-- See the social media share links when they click the share icon
+### Screenshot
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+![](./images/Screenshot_15-7-2025_234725_127.0.0.1.jpeg)
 
-## Where to find everything
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Links
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- Solution URL: [Add solution URL here](https://github.com/jeff20501/interactive-article-card)
+- Live Site URL: [Add live site URL here](https://interactive-article-card.netlify.app/)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+## My process
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+1️⃣ Planning and layout
 
-## Building your project
+Started by structuring the HTML, defining sections for the image, content, author info, and share button.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Focused on semantic structure for clarity.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+2️⃣ Styling and responsiveness
 
-## Deploying your project
+Styled using CSS with flexbox for layout.
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+Implemented responsiveness for screens below 850px.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+3️⃣ Adding interactivity
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+Used JavaScript to toggle the share icons on button click.
 
-## Create a custom `README.md`
+Handled dynamic updates (like showing/hiding avatars and changing background colors).
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+4️⃣ Debugging and refining
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+Solved issues where the share button’s position would shift when toggled.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+Made sure that on mobile, only the share block shows, and the avatar hides.
 
-## Submitting your solution
+### Built with
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- HTML: for semantic structure.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- CSS: for styling, flexbox layouts, hover states, and responsive design.
 
-## Sharing your solution
+- JavaScript: for interactivity (event listeners, DOM manipulation, toggling elements).
 
-There are multiple places you can share your solution:
+### What I learned
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+✅ How to dynamically inject HTML elements using innerHTML.
+✅ How to toggle visibility using display: flex and display: none in JavaScript.
+✅ How to keep an element fixed in place even when content changes.
+✅ How to hide and show different blocks depending on the screen size and interaction state.
+✅ How to improve responsive design by combining media queries and JavaScript logic.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+To see how you can add code snippets, see below:
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
+}
+```
 
-## Got feedback for us?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+### Useful resources
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 
-**Have fun building!** 🚀
+
+## Author
+
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
+**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
