@@ -4,33 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo5.png">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Article preview component</title>
 </head>
 <body>
+  <section class="wrapper">
+    <div>
+      <img class="drawers" src="./images/drawers.jpg">
+    </div>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <div class="info">
+      <h1>Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+      </h1>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+      <p>
+        Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </p>
 
-  Michelle Appleton
-  28 Jun 2020
+      <div class="foot">
+        <div class="avatar">
+          <img class="avatar-image" src="./images/avatar-michelle.jpg">
 
-  Share
+          <div class="avatar-info">
+            <p><span class="avatar-name">Michelle Appleton</span><br>28 Jun 2020</p>
+          </div> 
+        </div>
+
+        <div class="socials" style="display: none;">
+          <p>Share</p>
+          <div class="socials-icons">
+            <img src="./images/icon-facebook.svg" alt="Facebook">              
+            <img src="./images/icon-pinterest.svg" alt="Pinterest">
+            <img src="./images/icon-twitter.svg" alt="Twitter">
+          </div>
+        </div>
+
+        <div class="share-icon">
+          <button class="share-button">
+            <img src="./images/icon-share.svg">
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/jeff20501">Pixel&Code</a>.
   </div>
+
+  <script src="./index.js"></script>
 </body>
 </html>

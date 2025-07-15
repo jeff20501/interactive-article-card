@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope';
+    background-color: hsl(210, 46%, 95%);
+}
+
+img{
+    display: block;
+    max-inline-size: 100%;
+}
+
+h1{
+    color:hsl(217, 19%, 35%);
+}
+
+
+
+button{
+    border: none;
+}
+
+.wrapper{
+    display: flex;
+    background-color: hsl(210, 46%, 95%);
+    color: hsl(214, 17%, 51%);
+    max-inline-size: 1100px;
+    margin: 0 auto;
+    margin-top: 200px;
+    border-radius: 20px;
+    gap: 10px;
+    box-shadow: 10px 10px 20px hsl(214, 17%, 51%);
+    @media(width<850px){
+        flex-wrap: wrap;
+    }
+}
+
+.drawers{
+    inline-size: 700px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius:20px;
+    @media(width<850px){
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+}
+
+.info{
+    max-inline-size: 500px;
+    padding:40px
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.avatar{
+    display: flex;
+    gap: 20px;
+}
+.avatar-name{
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+}
+
+.avatar-image{
+    inline-size: 60px;
+    block-size: 60px;
+    border-radius: 100%;
+}
+
+.share-icon{
+    max-inline-size: 50px;
+    @media(width<850px){
+        
+    }
+}
+
+.share-button{
+    inline-size: 40px;
+    block-size: 40px;
+    transform: translateY(45%);
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.share-button:hover{
+    background-color: hsl(217, 19%, 35%);
+    cursor: pointer;
+}
+
+.share-button:hover:focus{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.socials{
+    background-color: hsl(217, 19%, 35%);
+    transform: translateY(-150%);
+    inline-size: 300px;
+    block-size: 40px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.socials p{
+    letter-spacing: 3px;
+    padding: 10px;
+    transform: translateY(-100%);
+    
+}
+
+
+.socials-icons{
+    display: flex;
+    gap:20px;
+    inline-size: 25px;
+    block-size: 25px;
+}
+
+
+.attribution{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.2rem;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(268, 96%, 48%);
+}
+
+.attribution a:hover{
+    color: rgb(255, 81, 0);
+}
